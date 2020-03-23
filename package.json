@@ -20,7 +20,7 @@
     "docs:watch": "nodemon --ext .js -w ./src/ --exec \"npm run docs --silent || true\"",
     "lint": "eslint \"./**/*.js\"",
     "serve": "NODE_ENV=production node ./src",
-    "start": "npm run dev",
+    "start": "npm run serve",
     "test": "npm run lint --silent && NODE_ENV=test nyc --nycrc-path ./config/nyc.json ./node_modules/mocha/bin/_mocha --opts ./config/mocha.opts",
     "test:watch": "nodemon --ext .js -w ./config/ -w ./src/ -w ./test/ --exec \"npm run test --silent || true\""
   },
