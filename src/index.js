@@ -13,7 +13,10 @@ const typeDefs = require('./typeDefs');
   await Promise.all(_.map(dbs, db => db.initialize(Sequelize)));
 
   const server = new ApolloServer({ dataSources, resolvers, typeDefs });
-  const { url } = await server.listen();
+  const { url } = await server.listen({
+    host: '0.0.0.0',
+    port: process.env.PORT || 4000,
+  });
 
   console.info(`🚀 Server is listening at ${url}`); // eslint-disable-line no-console
 })();
