@@ -48,7 +48,7 @@
     "apollo-server": "^2.9.4",
     "dotenv": "^8.0.0",
     "graphql": "^14.6.0",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "pg": "^7.11.0",
     "sequelize": "^5.18.4"
   }
